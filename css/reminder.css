@@ -1,0 +1,239 @@
+body {
+    background: #f4f8fb;
+    color: #1f2937;
+    min-height: 100vh;
+}
+
+.reminder-header {
+    padding: 65px 20px;
+    background: linear-gradient(135deg, #071d2b, #123f55);
+    color: white;
+}
+
+.reminder-header h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.reminder-header p {
+    color: #c9eaf5;
+    font-size: 17px;
+}
+
+.reminder-icon {
+    width: 75px;
+    height: 75px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(13, 202, 240, 0.15);
+    color: #0dcaf0;
+    font-size: 32px;
+}
+
+.reminder-card {
+    background: white;
+    border-radius: 18px;
+    padding: 25px;
+    border: 1px solid #e4edf2;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+    transition: 0.3s ease;
+}
+
+.reminder-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.11);
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.status-badge {
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.booking-id {
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.vehicle-section {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.vehicle-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e8f9fd;
+    color: #0dcaf0;
+    font-size: 23px;
+}
+
+.vehicle-section h3 {
+    margin: 0;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.vehicle-section p {
+    margin: 4px 0 0;
+    color: #6b7280;
+}
+
+.service-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.info-box {
+    display: flex;
+    gap: 12px;
+    padding: 15px;
+    background: #f7fafc;
+    border-radius: 12px;
+}
+
+.info-box > i {
+    color: #0dcaf0;
+    font-size: 19px;
+    margin-top: 3px;
+}
+
+.info-box small {
+    display: block;
+    color: #6b7280;
+    margin-bottom: 3px;
+}
+
+.info-box strong {
+    display: block;
+    font-size: 14px;
+}
+
+.countdown {
+    margin-top: 20px;
+    padding: 13px;
+    border-radius: 10px;
+    text-align: center;
+    background: #f1f5f9;
+}
+
+.card-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.card-actions .btn {
+    flex: 1;
+    padding: 10px;
+}
+
+.upcoming .status-badge {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.urgent .status-badge {
+    background: #cff4fc;
+    color: #087990;
+}
+
+.overdue .status-badge {
+    background: #f8d7da;
+    color: #842029;
+}
+
+.normal .status-badge {
+    background: #d1e7dd;
+    color: #0f5132;
+}
+
+.overdue .countdown {
+    background: #fff0f1;
+    color: #842029;
+}
+
+.urgent .countdown {
+    background: #eafaff;
+    color: #087990;
+}
+
+.upcoming .countdown {
+    background: #fff9e6;
+    color: #856404;
+}
+
+.empty-reminder {
+    background: white;
+    border-radius: 18px;
+    padding: 70px 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.empty-reminder > i {
+    font-size: 55px;
+    color: #0dcaf0;
+    margin-bottom: 20px;
+}
+
+.empty-reminder h3 {
+    font-weight: 700;
+}
+
+.empty-reminder p {
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+.footer {
+    margin-top: 60px;
+    padding: 25px 0;
+    background: #071d2b;
+    color: #c9eaf5;
+}
+
+.footer p {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 576px) {
+
+    .reminder-header h1 {
+        font-size: 32px;
+    }
+
+    .service-info {
+        grid-template-columns: 1fr;
+    }
+
+    .card-top {
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .card-actions {
+        flex-direction: column;
+    }
+}

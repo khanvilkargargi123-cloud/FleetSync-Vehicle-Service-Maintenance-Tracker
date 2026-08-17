@@ -1,0 +1,566 @@
+/* =========================================
+   FleetSync - Service Tracking Page
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f7fb;
+    color: #212529;
+}
+
+/* =========================================
+   NAVBAR
+   ========================================= */
+
+.navbar {
+    min-height: 70px;
+}
+
+.navbar-brand {
+    font-size: 1.4rem;
+    letter-spacing: 0.3px;
+}
+
+.navbar-brand i {
+    margin-right: 8px;
+}
+
+.navbar .btn {
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.navbar .btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   HERO SECTION
+   ========================================= */
+
+.tracking-hero {
+    position: relative;
+    padding: 65px 20px 75px;
+    background: linear-gradient(135deg, #0d1b2a, #123b5d, #0dcaf0);
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.tracking-hero::before {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border: 2px solid rgba(255, 255, 255, 0.12);
+    border-radius: 50%;
+    top: -120px;
+    right: 8%;
+}
+
+.tracking-hero::after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    bottom: -90px;
+    left: 8%;
+}
+
+.tracking-hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+.hero-icon i {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.tracking-hero h1 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.tracking-hero p {
+    margin: 0;
+    font-size: 1.05rem;
+    opacity: 0.9;
+}
+
+
+/* =========================================
+   MAIN TRACKING CARD
+   ========================================= */
+
+.tracking-card {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.tracking-card hr {
+    margin: 32px 0;
+    border-color: #e5e7eb;
+}
+
+
+/* =========================================
+   BOOKING SUMMARY
+   ========================================= */
+
+.booking-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.booking-summary > div {
+    padding: 22px;
+    border-radius: 12px;
+    background: #f7faff;
+    border: 1px solid #e7edf5;
+    transition: all 0.3s ease;
+}
+
+.booking-summary > div:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.06);
+}
+
+.booking-summary span {
+    display: block;
+    margin-bottom: 7px;
+    color: #6c757d;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+.booking-summary h3 {
+    margin: 0;
+    color: #162b40;
+    font-size: 1.15rem;
+    font-weight: 700;
+    word-break: break-word;
+}
+
+
+/* =========================================
+   CURRENT STATUS
+   ========================================= */
+
+.current-status {
+    margin: 25px 0 45px;
+    padding: 25px;
+    border-radius: 14px;
+    background: linear-gradient(
+        135deg,
+        #eefaff,
+        #f7fcff
+    );
+    border: 1px solid #c9edf7;
+}
+
+.current-status p {
+    margin-bottom: 8px;
+    color: #6c757d;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+}
+
+.current-status h2 {
+    margin: 0;
+    color: #162b40;
+    font-size: 1.55rem;
+    font-weight: 700;
+}
+
+.current-status h2 i {
+    margin-right: 8px;
+}
+
+
+/* =========================================
+   TRACKING TIMELINE
+   ========================================= */
+
+.tracking-container {
+    position: relative;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+/* Vertical line */
+
+.tracking-container::before {
+    content: "";
+    position: absolute;
+    left: 31px;
+    top: 32px;
+    bottom: 32px;
+    width: 3px;
+    background: #e1e7ed;
+    border-radius: 10px;
+}
+
+.tracking-step {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    min-height: 82px;
+    margin-bottom: 25px;
+}
+
+.tracking-step:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   STEP CIRCLE
+   ========================================= */
+
+.step-circle {
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 3px solid #dce3e9;
+    color: #9aa6b2;
+    font-size: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+    transition: all 0.3s ease;
+}
+
+
+/* =========================================
+   STEP CONTENT
+   ========================================= */
+
+.step-content {
+    margin-left: 22px;
+    padding: 15px 20px;
+    flex: 1;
+    border-radius: 12px;
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.step-content h4 {
+    margin: 0 0 5px;
+    color: #263746;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.step-content p {
+    margin: 0;
+    color: #8a96a3;
+    font-size: 0.9rem;
+}
+
+
+/* =========================================
+   COMPLETED STEP
+   ========================================= */
+
+.tracking-step.completed .step-circle {
+    background: #198754;
+    border-color: #198754;
+    color: #ffffff;
+}
+
+.tracking-step.completed .step-content {
+    background: #f0faf5;
+    border-color: #c9ead8;
+}
+
+.tracking-step.completed .step-content h4 {
+    color: #146c43;
+}
+
+.tracking-step.completed .step-content p {
+    color: #198754;
+}
+
+
+/* =========================================
+   ACTIVE STEP
+   ========================================= */
+
+.tracking-step.active .step-circle {
+    background: #0dcaf0;
+    border-color: #0dcaf0;
+    color: #ffffff;
+    box-shadow: 0 0 0 7px rgba(13, 202, 240, 0.15);
+    animation: pulseStep 2s infinite;
+}
+
+.tracking-step.active .step-content {
+    background: #eefaff;
+    border: 2px solid #0dcaf0;
+    box-shadow: 0 7px 20px rgba(13, 202, 240, 0.12);
+}
+
+.tracking-step.active .step-content h4 {
+    color: #087990;
+}
+
+.tracking-step.active .step-content p {
+    color: #087990;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   UPCOMING STEP
+   ========================================= */
+
+.tracking-step.upcoming .step-circle {
+    background: #ffffff;
+    border-color: #dce3e9;
+    color: #9aa6b2;
+}
+
+.tracking-step.upcoming .step-content {
+    background: #fafbfc;
+}
+
+.tracking-step.upcoming .step-content h4 {
+    color: #687684;
+}
+
+
+/* =========================================
+   ANIMATION
+   ========================================= */
+
+@keyframes pulseStep {
+    0% {
+        box-shadow: 0 0 0 0 rgba(13, 202, 240, 0.35);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(13, 202, 240, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(13, 202, 240, 0);
+    }
+}
+
+
+/* =========================================
+   ACTION BUTTONS
+   ========================================= */
+
+.tracking-card .btn {
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.tracking-card .btn:hover {
+    transform: translateY(-2px);
+}
+
+.tracking-card .btn-info {
+    color: #ffffff;
+}
+
+.tracking-card .btn-info:hover {
+    color: #ffffff;
+    box-shadow: 0 5px 15px rgba(13, 202, 240, 0.25);
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 0.95rem;
+}
+
+footer small {
+    color: #adb5bd;
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .tracking-hero {
+        padding: 50px 15px 60px;
+    }
+
+    .tracking-hero h1 {
+        font-size: 2rem;
+    }
+
+    .tracking-card {
+        padding: 25px;
+        border-radius: 14px;
+    }
+
+    .booking-summary {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .tracking-container::before {
+        left: 27px;
+    }
+
+    .step-circle {
+        width: 56px;
+        height: 56px;
+        font-size: 18px;
+    }
+
+    .step-content {
+        margin-left: 15px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 576px) {
+
+    .navbar .container {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .navbar-brand {
+        margin-right: 0;
+    }
+
+    .navbar .btn {
+        font-size: 0.85rem;
+        padding: 7px 10px;
+    }
+
+    .tracking-hero {
+        padding: 40px 15px 50px;
+    }
+
+    .hero-icon {
+        width: 65px;
+        height: 65px;
+    }
+
+    .hero-icon i {
+        font-size: 25px;
+    }
+
+    .tracking-hero h1 {
+        font-size: 1.7rem;
+    }
+
+    .tracking-hero p {
+        font-size: 0.9rem;
+    }
+
+    .tracking-card {
+        padding: 18px;
+    }
+
+    .booking-summary h3 {
+        font-size: 1rem;
+    }
+
+    .current-status {
+        padding: 20px 12px;
+        margin-bottom: 30px;
+    }
+
+    .current-status h2 {
+        font-size: 1.15rem;
+    }
+
+    .tracking-container::before {
+        left: 23px;
+    }
+
+    .tracking-step {
+        min-height: 70px;
+        margin-bottom: 20px;
+    }
+
+    .step-circle {
+        width: 48px;
+        height: 48px;
+        font-size: 16px;
+        border-width: 2px;
+    }
+
+    .step-content {
+        margin-left: 12px;
+        padding: 12px 14px;
+    }
+
+    .step-content h4 {
+        font-size: 0.9rem;
+    }
+
+    .step-content p {
+        font-size: 0.78rem;
+    }
+
+    .tracking-card .btn {
+        width: 100%;
+        margin: 5px 0 !important;
+    }
+
+    footer {
+        font-size: 0.85rem;
+    }
+}

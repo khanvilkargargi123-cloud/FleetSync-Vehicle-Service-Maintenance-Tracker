@@ -1,0 +1,155 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f4f8fc;
+    font-family:'Segoe UI',sans-serif;
+}
+
+/* Navbar */
+
+.navbar{
+    padding:15px 0;
+    box-shadow:0 5px 20px rgba(0,0,0,.12);
+}
+
+.navbar-brand{
+    font-weight:700;
+}
+
+.nav-link{
+    color:#fff !important;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#0dcaf0 !important;
+}
+
+.nav-link.active{
+    color:#0dcaf0 !important;
+    font-weight:600;
+}
+
+/* Edit Profile Card */
+
+.edit-profile-card{
+    max-width:850px;
+    margin:auto;
+    background:#fff;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.edit-profile-card:hover{
+    transform:translateY(-5px);
+}
+
+.edit-profile-card h2{
+    color:#0b5ed7;
+    font-weight:700;
+}
+
+.edit-profile-card h2 i{
+    color:#0dcaf0;
+}
+
+/* Labels */
+
+.form-label{
+    font-weight:600;
+    color:#555;
+}
+
+/* Inputs */
+
+.form-control{
+    height:50px;
+    border-radius:12px;
+    border:1px solid #dcdcdc;
+    transition:.3s;
+}
+
+.form-control:focus{
+    border-color:#0dcaf0;
+    box-shadow:0 0 10px rgba(13,202,240,.3);
+}
+
+/* Buttons */
+
+.btn{
+    border-radius:30px;
+    padding:12px 30px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-info{
+    background:#0dcaf0;
+    border:none;
+}
+
+.btn-info:hover{
+    background:#0b5ed7;
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(13,202,240,.35);
+}
+
+.btn-secondary:hover{
+    transform:translateY(-2px);
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.edit-profile-card{
+    padding:25px;
+}
+
+.btn{
+    width:100%;
+    margin-bottom:10px;
+}
+
+.ms-3{
+    margin-left:0 !important;
+}
+
+}
+
+/* Profile Photo Upload */
+
+.profile-upload {
+    margin-top: 15px;
+}
+
+.profile-upload input[type="file"] {
+    display: none !important;
+}
+
+.upload-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 22px;
+    border-radius: 30px;
+    background: #ffffff;
+    color: #075985;
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px solid #ffffff;
+    transition: 0.3s ease;
+}
+
+.upload-btn:hover {
+    background: #0dcaf0;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}

@@ -1,0 +1,202 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f8fc;
+    overflow-x:hidden;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+    padding:15px 0;
+}
+
+.navbar-brand{
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+.nav-link{
+    color:#fff !important;
+    transition:.3s;
+    font-size:17px;
+}
+
+.nav-link:hover{
+    color:#0dcaf0 !important;
+}
+
+.nav-link.active{
+    color:#0dcaf0 !important;
+    font-weight:bold;
+}
+
+.btn-info{
+    border-radius:30px;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero-section{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+
+    background:
+    linear-gradient(rgba(15,23,42,.65),rgba(15,23,42,.65)),
+    url("../images/car image.jpeg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-section h1{
+    font-size:55px;
+    font-weight:700;
+}
+
+.hero-section p{
+    font-size:20px;
+    line-height:1.8;
+}
+
+.hero-section .btn{
+    border-radius:30px;
+    padding:12px 30px;
+}
+
+/* ===========================
+   FEATURES
+=========================== */
+
+.feature-card{
+    border:none;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.feature-card:hover{
+    transform:translateY(-10px);
+}
+
+.feature-icon{
+    font-size:55px;
+    color:#0dcaf0;
+}
+
+.feature-card h4{
+    font-weight:bold;
+}
+
+.feature-card p{
+    color:#666;
+}
+
+/* ===========================
+   STATISTICS
+=========================== */
+
+.stats-section{
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+}
+
+.stats-box{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+
+    border-radius:20px;
+    padding:35px;
+
+    color:#fff;
+
+    transition:.3s;
+}
+
+.stats-box:hover{
+    transform:translateY(-10px);
+}
+
+.stats-box h1{
+    font-size:48px;
+    font-weight:bold;
+}
+
+.stats-box p{
+    color:#ddd;
+}
+
+/* ===========================
+   ABOUT
+=========================== */
+
+.about-image,
+.img-fluid{
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+section h2{
+    font-weight:700;
+}
+
+section p{
+    line-height:1.8;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    background:#0f172a !important;
+}
+
+footer h4{
+    color:#0dcaf0;
+}
+
+footer p{
+    color:#ddd;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+.hero-section{
+    text-align:center;
+}
+
+.hero-section h1{
+    font-size:35px;
+}
+
+.hero-section .btn{
+    display:block;
+    width:100%;
+    margin-top:15px;
+}
+
+.feature-card,
+.stats-box{
+    margin-bottom:20px;
+}
+
+}

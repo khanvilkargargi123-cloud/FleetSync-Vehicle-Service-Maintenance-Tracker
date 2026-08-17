@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f4f8fc;
+    font-family: Arial, sans-serif;
+}
+
+.edit-card,
+.locked-card {
+    max-width: 900px;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+}
+
+.edit-icon,
+.locked-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    background: #e8f8fc;
+    color: #0dcaf0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.edit-card h1,
+.locked-card h2 {
+    font-weight: 700;
+}
+
+.section-title {
+    margin: 25px 0 15px;
+    color: #333;
+}
+
+.section-title i {
+    color: #0dcaf0;
+    margin-right: 8px;
+}
+
+.form-control,
+.form-select {
+    min-height: 48px;
+    border-radius: 10px;
+}
+
+textarea.form-control {
+    min-height: 110px;
+}
+
+.btn {
+    border-radius: 25px;
+    padding: 10px 22px;
+}
+
+.locked-card {
+    text-align: center;
+    margin-top: 100px;
+    max-width: 600px;
+}
+
+.locked-card .locked-icon {
+    color: #6c757d;
+    background: #eeeeee;
+}
+
+.locked-card p {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+
+    .edit-card,
+    .locked-card {
+        padding: 25px 18px;
+        margin: 15px auto;
+    }
+
+    .edit-card h1 {
+        font-size: 28px;
+    }
+}

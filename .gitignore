@@ -1,0 +1,14 @@
+
+# XAMPP / local files
+*.log
+
+# Environment / secrets
+.env
+
+# Uploaded user files
+uploads/*
+
+# Local configuration containing passwords
+email_config.php
+
+profile_uploads/*

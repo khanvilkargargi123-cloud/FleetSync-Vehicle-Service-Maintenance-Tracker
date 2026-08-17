@@ -1,0 +1,176 @@
+/* ================= RESET ================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    padding:15px 0;
+    backdrop-filter:blur(10px);
+}
+
+.navbar-brand{
+    letter-spacing:1px;
+}
+
+.nav-link{
+    color:#fff!important;
+    transition:.3s;
+}
+
+.nav-link:hover,
+.nav-link.active{
+    color:#0dcaf0!important;
+}
+
+.btn-info{
+    border-radius:30px;
+    padding:10px 28px;
+    font-weight:600;
+}
+
+/* ================= HERO ================= */
+
+.booking-hero{
+    height:100vh;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    transition:background-image 1s ease-in-out;
+}
+
+.hero-content{
+    background:rgba(0,0,0,0.45);
+    padding:40px;
+    border-radius:20px;
+}
+
+.hero-content h1{
+    color:#fff;
+    font-size:55px;
+    font-weight:bold;
+}
+
+.hero-content p{
+    color:#fff;
+    font-size:20px;
+}
+
+/* ================= SECTION TITLE ================= */
+
+section h2{
+    font-weight:700;
+}
+
+/* ================= SERVICE CARDS ================= */
+
+.service-card{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(10px);
+    border:none;
+    border-radius:20px;
+    color:#fff;
+    transition:.3s;
+    box-shadow:0 8px 25px rgba(0,0,0,.25);
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(13,202,240,.35);
+}
+
+.service-card h3{
+    color:#0dcaf0;
+    margin-bottom:15px;
+    font-weight:bold;
+}
+
+.service-card p{
+    color:#d1d5db;
+}
+
+/* ================= WHY CHOOSE ================= */
+
+.container h5{
+    margin-top:15px;
+    font-weight:600;
+}
+
+.container h1{
+    font-size:55px;
+    transition:.3s;
+}
+
+.container h1:hover{
+    transform:scale(1.15);
+}
+
+/* ================= REVIEW CARDS ================= */
+
+.card{
+    background:rgba(255,255,255,.08);
+    border:none;
+    border-radius:20px;
+    color:#fff;
+    transition:.3s;
+    box-shadow:0 8px 25px rgba(0,0,0,.25);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card strong{
+    color:#0dcaf0;
+}
+
+.card p{
+    color:#d1d5db;
+    margin:15px 0;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#08111f;
+    margin-top:60px;
+    padding:30px;
+    text-align:center;
+    color:#d1d5db;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+.hero-content h1{
+    font-size:36px;
+}
+
+.hero-content p{
+    font-size:16px;
+}
+
+.service-card{
+    margin-bottom:20px;
+}
+
+}

@@ -1,0 +1,824 @@
+/* =========================================
+   FleetSync - Professional Booking Details
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f8fb;
+    color: #263238;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    letter-spacing: 0.5px;
+}
+
+.navbar .btn {
+    border-radius: 10px;
+    padding: 9px 18px;
+}
+
+/* ================= MAIN AREA ================= */
+
+.container.py-5 {
+    padding-top: 55px !important;
+    padding-bottom: 70px !important;
+}
+
+/* ================= MAIN CARD ================= */
+
+.details-card {
+    max-width: 950px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 48px 55px;
+    border-radius: 24px;
+    box-shadow: 0 12px 40px rgba(20, 50, 70, 0.10);
+}
+
+/* ================= HEADER ================= */
+
+.details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+
+.details-header h2 {
+    margin: 0 0 8px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #123044;
+}
+
+.details-header p {
+    margin: 0;
+    color: #71808c;
+    font-size: 15px;
+}
+
+/* ================= BOOKING ID ================= */
+
+.booking-id {
+    display: inline-block;
+    background: #eefaff;
+    color: #087990;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.booking-id strong {
+    margin-left: 4px;
+}
+
+/* ================= STATUS ================= */
+
+.status-badge {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.status-badge.pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.status-badge.confirmed {
+    background: #cff4fc;
+    color: #087990;
+}
+
+.status-badge.progress {
+    background: #e2d9f3;
+    color: #59359a;
+}
+
+.status-badge.completed {
+    background: #d1e7dd;
+    color: #0f5132;
+}
+
+.status-badge.cancelled {
+    background: #f8d7da;
+    color: #842029;
+}
+
+/* ================= DIVIDER ================= */
+
+.details-card hr {
+    margin: 38px 0;
+    border: 0;
+    border-top: 1px solid #e6edf1;
+}
+
+/* ================= SECTION TITLE ================= */
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+    color: #123044;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.section-title i {
+    color: #0dcaf0;
+    width: 25px;
+    text-align: center;
+}
+
+/* ================= INFO ITEMS ================= */
+
+.info-item {
+    min-height: 78px;
+    padding: 18px 22px;
+    margin-bottom: 18px;
+
+    background: #f8fbfd;
+
+    border: 1px solid #e6eef2;
+    border-radius: 14px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: 0.25s ease;
+}
+
+.info-item:hover {
+    background: #f1fbfe;
+    border-color: #bcecf7;
+    transform: translateY(-2px);
+}
+
+.info-item span {
+    color: #74828c;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.info-item strong {
+    color: #1d303c;
+    font-size: 15px;
+    text-align: right;
+}
+
+.info-item.next-service {
+    background: #ecfbff;
+    border-color: #b9edf7;
+}
+
+.info-item.next-service span {
+    color: #087990;
+}
+
+.info-item.next-service strong {
+    color: #087990;
+}
+
+/* ================= VEHICLE IMAGE ================= */
+
+.vehicle-image-box {
+    margin-top: 25px;
+    padding: 25px;
+    background: #f8fbfd;
+    border: 1px solid #e6eef2;
+    border-radius: 16px;
+}
+
+.vehicle-image-box h5 {
+    margin-bottom: 18px;
+    color: #123044;
+    font-weight: 700;
+}
+
+.vehicle-image-box h5 i {
+    color: #0dcaf0;
+    margin-right: 8px;
+}
+
+.vehicle-image-box img {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    max-height: 300px;
+    object-fit: cover;
+    margin: auto;
+    border-radius: 14px;
+}
+
+/* ================= NOTES ================= */
+
+.notes-box {
+    margin-top: 25px;
+    padding: 25px;
+    background: #fffdf5;
+    border: 1px solid #f1e6b8;
+    border-radius: 16px;
+}
+
+.notes-box h5 {
+    margin-bottom: 12px;
+    color: #665b27;
+    font-weight: 700;
+}
+
+.notes-box h5 i {
+    margin-right: 8px;
+}
+
+.notes-box p {
+    margin: 0;
+    color: #625d48;
+    line-height: 1.7;
+}
+
+/* =========================================
+   FleetSync - Professional Booking Details
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f8fb;
+    color: #263238;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    letter-spacing: 0.5px;
+}
+
+.navbar .btn {
+    border-radius: 10px;
+    padding: 9px 18px;
+}
+
+/* ================= MAIN AREA ================= */
+
+.container.py-5 {
+    padding-top: 55px !important;
+    padding-bottom: 70px !important;
+}
+
+/* ================= MAIN CARD ================= */
+
+.details-card {
+    max-width: 950px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 48px 55px;
+    border-radius: 24px;
+    box-shadow: 0 12px 40px rgba(20, 50, 70, 0.10);
+}
+
+/* ================= HEADER ================= */
+
+.details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+
+.details-header h2 {
+    margin: 0 0 8px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #123044;
+}
+
+.details-header p {
+    margin: 0;
+    color: #71808c;
+    font-size: 15px;
+}
+
+/* ================= BOOKING ID ================= */
+
+.booking-id {
+    display: inline-block;
+    background: #eefaff;
+    color: #087990;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.booking-id strong {
+    margin-left: 4px;
+}
+
+/* ================= STATUS ================= */
+
+.status-badge {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.status-badge.pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.status-badge.confirmed {
+    background: #cff4fc;
+    color: #087990;
+}
+
+.status-badge.progress {
+    background: #e2d9f3;
+    color: #59359a;
+}
+
+.status-badge.completed {
+    background: #d1e7dd;
+    color: #0f5132;
+}
+
+.status-badge.cancelled {
+    background: #f8d7da;
+    color: #842029;
+}
+
+/* ================= DIVIDER ================= */
+
+.details-card hr {
+    margin: 38px 0;
+    border: 0;
+    border-top: 1px solid #e6edf1;
+}
+
+/* ================= SECTION TITLE ================= */
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+    color: #123044;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.section-title i {
+    color: #0dcaf0;
+    width: 25px;
+    text-align: center;
+}
+
+/* ================= INFO ITEMS ================= */
+
+.info-item {
+    min-height: 78px;
+    padding: 18px 22px;
+    margin-bottom: 18px;
+
+    background: #f8fbfd;
+
+    border: 1px solid #e6eef2;
+    border-radius: 14px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: 0.25s ease;
+}
+
+.info-item:hover {
+    background: #f1fbfe;
+    border-color: #bcecf7;
+    transform: translateY(-2px);
+}
+
+.info-item span {
+    color: #74828c;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.info-item strong {
+    color: #1d303c;
+    font-size: 15px;
+    text-align: right;
+}
+
+.info-item.next-service {
+    background: #ecfbff;
+    border-color: #b9edf7;
+}
+
+.info-item.next-service span {
+    color: #087990;
+}
+
+.info-item.next-service strong {
+    color: #087990;
+}
+
+/* ================= VEHICLE IMAGE ================= */
+
+.vehicle-image-box {
+    margin-top: 25px;
+    padding: 25px;
+    background: #f8fbfd;
+    border: 1px solid #e6eef2;
+    border-radius: 16px;
+}
+
+.vehicle-image-box h5 {
+    margin-bottom: 18px;
+    color: #123044;
+    font-weight: 700;
+}
+
+.vehicle-image-box h5 i {
+    color: #0dcaf0;
+    margin-right: 8px;
+}
+
+.vehicle-image-box img {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    max-height: 300px;
+    object-fit: cover;
+    margin: auto;
+    border-radius: 14px;
+}
+
+/* ================= NOTES ================= */
+
+.notes-box {
+    margin-top: 25px;
+    padding: 25px;
+    background: #fffdf5;
+    border: 1px solid #f1e6b8;
+    border-radius: 16px;
+}
+
+.notes-box h5 {
+    margin-bottom: 12px;
+    color: #665b27;
+    font-weight: 700;
+}
+
+.notes-box h5 i {
+    margin-right: 8px;
+}
+
+.notes-box p {
+    margin: 0;
+    color: #625d48;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   PAYMENT INFORMATION CARD
+========================================= */
+
+.booking-details-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 25px;
+    margin-top: 25px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+.booking-details-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================
+   PAYMENT TITLE
+========================================= */
+
+.booking-details-card .details-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 21px;
+    font-weight: 700;
+    color: #212529;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f0f2f5;
+}
+
+.booking-details-card .details-title i {
+    font-size: 22px;
+}
+
+
+/* =========================================
+   PAYMENT ROW
+========================================= */
+
+.booking-details-card .details-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 14px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.booking-details-card .details-row:last-child {
+    border-bottom: none;
+}
+
+
+/* LEFT SIDE */
+
+.booking-details-card .details-row span {
+    color: #6c757d;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+/* RIGHT SIDE */
+
+.booking-details-card .details-row strong {
+    color: #212529;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: right;
+}
+
+
+/* =========================================
+   SERVICE AMOUNT
+========================================= */
+
+.booking-details-card .details-row:first-of-type strong {
+    color: #198754;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   PAYMENT STATUS
+========================================= */
+
+.booking-details-card .text-success {
+    color: #198754 !important;
+}
+
+.booking-details-card .text-warning {
+    color: #d39e00 !important;
+}
+
+.booking-details-card .text-secondary {
+    color: #6c757d !important;
+}
+
+
+/* =========================================
+   PAYMENT STATUS ICONS
+========================================= */
+
+.booking-details-card .details-row strong i {
+    margin-right: 5px;
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 576px) {
+
+    .booking-details-card {
+        padding: 18px;
+        border-radius: 12px;
+    }
+
+    .booking-details-card .details-title {
+        font-size: 18px;
+    }
+
+    .booking-details-card .details-row {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .booking-details-card .details-row strong {
+        text-align: left;
+    }
+
+}
+
+
+
+/* ================= TRACKING ================= */
+
+.tracking {
+    margin-top: 30px;
+    padding: 30px;
+    background: #f8fbfd;
+    border: 1px solid #e5edf1;
+    border-radius: 18px;
+}
+
+.track-step {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    opacity: 0.4;
+    transition: 0.3s ease;
+}
+
+.track-step.active {
+    opacity: 1;
+}
+
+.track-icon {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background: #dfe8ed;
+    color: #73818a;
+}
+
+.track-step.active .track-icon {
+    background: #0dcaf0;
+    color: #ffffff;
+}
+
+.track-step strong {
+    display: block;
+    color: #233743;
+    margin-bottom: 4px;
+}
+
+.track-step small {
+    color: #7a8992;
+}
+
+.track-line {
+    height: 30px;
+    width: 2px;
+    margin-left: 23px;
+    background: #dce5e9;
+}
+
+/* ================= ACTION BUTTONS ================= */
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+
+    margin-top: 45px;
+    padding-top: 30px;
+
+    border-top: 1px solid #e6edf1;
+}
+
+.action-buttons .btn {
+    min-width: 170px;
+    padding: 11px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.25s ease;
+}
+
+.action-buttons .btn:hover {
+    transform: translateY(-3px);
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+    margin-top: 30px;
+    padding: 35px 20px;
+    background: #08111f;
+    color: #cbd5dc;
+    text-align: center;
+}
+
+.footer p {
+    margin-bottom: 8px;
+}
+
+.footer i {
+    color: #0dcaf0;
+    margin-right: 6px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    .details-card {
+        padding: 35px 25px;
+        margin: 0 12px;
+    }
+
+    .details-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .details-header h2 {
+        font-size: 25px;
+    }
+
+    .info-item {
+        min-height: auto;
+        padding: 17px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .info-item strong {
+        text-align: left;
+    }
+
+    .tracking {
+        padding: 22px;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    .action-buttons .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .details-card {
+        padding: 28px 18px;
+        border-radius: 18px;
+    }
+
+    .container.py-5 {
+        padding-top: 30px !important;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
+
+    .status-badge {
+        padding: 8px 16px;
+    }
+
+}

@@ -1,0 +1,177 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:#fff;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    padding:15px 0;
+    backdrop-filter:blur(10px);
+}
+
+.navbar-brand{
+    letter-spacing:1px;
+}
+
+.nav-link{
+    color:#fff !important;
+    font-size:17px;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#0dcaf0 !important;
+    transform:translateY(-2px);
+}
+
+.nav-link.active{
+    color:#0dcaf0 !important;
+    font-weight:bold;
+}
+
+/* ================= HERO ================= */
+
+.about-hero{
+    padding:80px 0;
+}
+
+.about-hero h1{
+    font-weight:700;
+}
+
+.about-hero p{
+    color:#d1d5db;
+}
+
+.about-hero img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.4);
+}
+
+/* ================= FEATURE CARDS ================= */
+
+.feature-card{
+    background:#16213e;
+    color:#fff;
+    border:none;
+    border-radius:20px;
+    transition:.3s;
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+}
+
+.feature-card:hover{
+    transform:translateY(-10px);
+    background:#1d3557;
+}
+
+.feature-card h4{
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.feature-card p{
+    color:#d1d5db;
+}
+
+/* ================= QUOTE ================= */
+
+.quote-section{
+    background:#16213e;
+    padding:60px 40px;
+    border-radius:25px;
+    box-shadow:0 12px 30px rgba(0,0,0,.35);
+}
+
+.quote-section h2{
+    font-weight:700;
+}
+
+.quote-section p{
+    color:#d1d5db;
+}
+
+.quote-section .btn{
+    border-radius:40px;
+    padding:12px 35px;
+    font-weight:bold;
+}
+
+/* ================= VALUES ================= */
+
+.dashboard-card{
+    background:#16213e;
+    color:#fff;
+    border-radius:20px;
+    transition:.3s;
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+}
+
+.dashboard-card:hover{
+    background:#1d3557;
+    transform:translateY(-10px);
+}
+
+.dashboard-card h4{
+    font-weight:bold;
+}
+
+.dashboard-card p{
+    color:#d1d5db;
+}
+
+/* ================= BUTTONS ================= */
+
+.btn{
+    border-radius:30px;
+    font-weight:600;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    margin-top:40px;
+    background:#0b1120 !important;
+}
+
+footer h4{
+    font-weight:bold;
+}
+
+footer a{
+    transition:.3s;
+}
+
+footer a:hover{
+    color:#0dcaf0 !important;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+.about-hero{
+    text-align:center;
+}
+
+.about-hero img{
+    margin-bottom:30px;
+}
+
+.quote-section{
+    padding:35px 20px;
+}
+
+.dashboard-card{
+    margin-bottom:20px;
+}
+
+}

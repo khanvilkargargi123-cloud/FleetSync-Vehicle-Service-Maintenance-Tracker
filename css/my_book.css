@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f4f8fc;
+    font-family:Arial,sans-serif;
+}
+
+/* Navbar */
+
+.navbar{
+    padding:15px 0;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+/* Booking Card */
+
+.booking-card{
+    background:#fff;
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+}
+
+.booking-card h2{
+    color:#0b5ed7;
+    font-weight:700;
+}
+
+/* Table */
+
+.table{
+    margin-top:20px;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+.table thead{
+    background:#0dcaf0;
+}
+
+.table thead th{
+    color:#fff;
+    border:none;
+    padding:15px;
+}
+
+.table tbody td{
+    padding:15px;
+    vertical-align:middle;
+}
+
+.table tbody tr:hover{
+    background:#eef8ff;
+}
+
+/* Status Badges */
+
+.badge{
+    padding:8px 15px;
+    border-radius:20px;
+    font-size:14px;
+}
+
+/* Buttons */
+
+.btn{
+    border-radius:30px;
+    padding:10px 22px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-info:hover{
+    transform:translateY(-2px);
+    box-shadow:0 5px 15px rgba(13,202,240,.35);
+}
+
+/* No Booking Section */
+
+.text-center h4{
+    color:#0b5ed7;
+    font-weight:700;
+}
+
+.text-center p{
+    color:#666 !important;
+}
+
+/* Footer */
+
+footer{
+    margin-top:50px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.booking-card{
+    padding:20px;
+}
+
+.booking-card h2{
+    font-size:26px;
+}
+
+.table{
+    font-size:14px;
+}
+
+.btn{
+    margin-top:5px;
+}
+
+}
+
+/* Footer */
+
+.footer{
+    background:#212529;
+    color:#fff;
+    text-align:center;
+    padding:25px 0;
+    margin-top:60px;
+    box-shadow:0 -5px 15px rgba(0,0,0,.15);
+}
+
+.footer p{
+    margin-bottom:5px;
+    font-size:17px;
+    font-weight:600;
+}
+
+.footer i{
+    color:#0dcaf0;
+    margin-right:8px;
+}
+
+.footer small{
+    color:#adb5bd;
+    font-size:14px;
+}
